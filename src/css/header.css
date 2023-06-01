@@ -1,7 +1,5 @@
 .header-container {
   min-width: 320px;
-  max-width: 375px;
-  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -11,14 +9,11 @@
   padding-bottom: 14px;
   background-color: #fafafa;
 }
-@media only screen and (max-width: 768px) {
-  .header-container {
-    gap: 0;
-  }
-}
+
 @media only screen and (min-width: 768px) {
   .header-container {
     max-width: 768px;
+    padding: 0px 32px;
   }
   .header {
     padding: 24px 0px;
@@ -27,6 +22,10 @@
 @media only screen and (min-width: 1200px) {
   .header-container {
     max-width: 1200px;
+  }
+  .header {
+    padding-top: 24px;
+    padding-bottom: 32px;
   }
 }
 .header-nav {
@@ -54,6 +53,9 @@
 
 @media only screen and (max-width: 1199px) {
   .header-nav-list {
+    display: none;
+  }
+  .header-addresses {
     display: none;
   }
 }
@@ -92,6 +94,8 @@
 .header-socials-list {
   background-color: #111111;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 18px;
 }
 
@@ -108,32 +112,36 @@
   cursor: pointer;
   border: none;
   outline: none;
-  display: none;
 }
 @media (min-width: 1199px) {
   .menu-toggle {
     display: none;
   }
 }
-.js-open-menu {
-}
 .mobile-menu-icon {
 }
 .menu-container {
   background: #1e1823;
-  max-width: 220px;
-  height: 100%;
+  width: 220px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  padding: 136px 46px 20px 50px;
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    padding: 156px 81px 20px 85px;
+  }
+}
+
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -150,8 +158,21 @@
 .modal-close-icon {
 }
 .mobile-menu {
+  margin-bottom: auto;
 }
-.mobile-menu-item {
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 24px;
 }
 .mobile-link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+/* Mobile social links */
+.mobile-addresses {
+  border: solid #e7e9fc;
 }
