@@ -50,6 +50,7 @@ body {
   line-height: 1.28;
   letter-spacing: 0.02em;
   color: var(--color-black);
+  background-color: #fafafa;
 }
 
 section:not(:last-child) {
@@ -72,6 +73,7 @@ section:not(:last-child) {
   position: relative;
   max-width: 375px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
