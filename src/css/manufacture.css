@@ -1,3 +1,25 @@
 .manufacture {
-  background-color: cornflowerblue;
+}
+
+.manufacture-title {
+  margin-bottom: 32px;
+}
+
+.video {
+  margin-bottom: 40px;
+}
+
+.video iframe {
+  min-height: 500px;
+  width: 100%;
+}
+
+.manufacture-text {
+  margin-bottom: 20px;
+}
+
+.manufacture-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
 }
