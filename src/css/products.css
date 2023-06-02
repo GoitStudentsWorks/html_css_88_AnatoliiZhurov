@@ -18,9 +18,15 @@
 }
  */
 
-/* .products .swiper-slide {
-  
-} */
+.products .swiper-slide {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 335px;
+
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
 
 .products .swiper-pagination {
   display: flex;
@@ -55,11 +61,11 @@
   color: var(--color-orange);
 }
 
-.our-products-list {
+/* .our-products-list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-}
+} */
 
 .our-products-item {
   padding-top: 32px;
