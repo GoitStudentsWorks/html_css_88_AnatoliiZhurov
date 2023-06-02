@@ -1,3 +1,63 @@
 .sellers {
-  background-color: hotpink;
+  background-color: blue;
+}
+
+.sellers-item-top {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  margin-bottom: 32px;
+}
+.sellers-item {
+  color: #111111;
+}
+@media screen and (min-width: 1200px) {
+  .sellers-list {
+    display: flex;
+  }
+}
+.sellers-list-img {
+  padding-bottom: 20px;
+}
+.sellers-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  padding-right: 49px;
+  padding-bottom: 32px;
+}
+@media screen and (max-width: 1199.8px) {
+  .sellers-list-img3 {
+    display: none;
+  }
+}
+
+.sellers-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 19px;
+  width: 120px;
+  height: 41px;
+  min-width: 94px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  background-color: var(--color-orange);
+  margin: auto;
+  display: block;
+}
+.sellers-btn-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
 }
