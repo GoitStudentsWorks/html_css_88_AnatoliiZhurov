@@ -1,5 +1,6 @@
 .products {
   background-color: #fafafa;
+  overflow: hidden;
 }
 
 /* Swiper */
@@ -45,6 +46,24 @@
   display: flex;
   justify-content: center;
   gap: 13px;
+}
+
+/* @media screen and (max-width: 375px) {
+  .products .swiper-pagination {
+    max-width: 375px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .products .swiper-pagination {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .products .swiper-pagination {
+    max-width: 100%;
+  }
 }
 
 /* .our-product-swiper-pagination-bullet {
