@@ -1,4 +1,6 @@
 .advantages-section {
+  width: 100%;
+
   background-color: black;
   font-family: 'Montserrat';
   font-style: normal;
@@ -10,11 +12,42 @@
 }
 
 .advantages-container {
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  max-width: 375px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages-container {
+    margin: 0 auto;
+    padding: 50px 32px;
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantages-container {
+    max-width: 1200px;
+    padding: 50px;
+
+  }
+}
+
+.advantages-sections-title {
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-icons-contaner {
@@ -28,12 +61,57 @@
   margin-bottom: 22px;
 }
 
-.advantafes-list {
-  display: flex;
-  column-gap: 70px;
+.advantages-icons {
+  fill: #FD9222;
 }
 
-.advantages-list-item {}
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  column-gap: 70px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 60px;
+    max-width: 100%;
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .advantages-list {
+    column-gap: 88px;
+  }
+
+  .vertical-row::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 18px;
+    width: 1px;
+    height: 124px;
+    background: rgb(255, 255, 255, 0.5);
+    transform: translateX(-90px);
+  }
+}
+
+.advantages-list-item {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .advantages-list-item {
+
+    height: 244px;
+    width: 308px;
+  }
+}
 
 .advantages-list-title {
   font-weight: 600;
@@ -42,8 +120,6 @@
   color: #ffffff;
   margin-bottom: 18px;
 }
-
-
 
 .advantages-icons {
 
