@@ -46,26 +46,14 @@
   display: flex;
   justify-content: center;
   gap: 13px;
+  width: 100%;
 }
 
-/* @media screen and (max-width: 375px) {
+@media screen and (min-width: 768px) and (max-width: 1199.8px) {
   .products .swiper-pagination {
-    max-width: 375px;
-  }
-} */
-
-@media screen and (max-width: 768px) {
-  .products .swiper-pagination {
-    max-width: 768px;
+    width: 768px;
   }
 }
-
-@media screen and (min-width: 769px) {
-  .products .swiper-pagination {
-    max-width: 100%;
-  }
-}
-
 /* .our-product-swiper-pagination-bullet {
   width: 13px;
   height: 13px;
