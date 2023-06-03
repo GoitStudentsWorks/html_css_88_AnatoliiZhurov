@@ -8,6 +8,20 @@
   outline: 2px solid red;
 }
 
+@media only screen and (min-width: 768px) {
+  .manufacture-container {
+    max-width: 768px;
+    padding: 0px 77px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .manufacture-container {
+    max-width: 1200px;
+    padding: 0px 32px;
+  }
+}
+
 .manufacture-title {
   margin-bottom: 32px;
 
@@ -19,8 +33,23 @@
   letter-spacing: -0.03em;
 }
 
+@media only screen and (min-width: 768px) {
+  .manufacture-title {
+    margin-bottom: 50px;
+
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
 .manufacture-made {
   color: var(--color-orange);
+}
+
+@media only screen and (min-width: 1200px) {
+  .content {
+    display: flex;
+  }
 }
 
 /* video */
@@ -28,14 +57,33 @@
 .video {
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 335px;
+  max-width: 335px;
   position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .video {
+    max-width: 614px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .video {
+    max-width: 600px;
+    margin-right: 20px;
+  }
 }
 
 .video iframe {
   min-height: 500px;
   width: 100%;
   display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .video iframe {
+    min-height: 400px;
+  }
 }
 
 .choco-pick {
@@ -60,8 +108,23 @@
   padding: 20px 14px;
   max-width: 335px;
 
-  background-color: var(--color-wite);
+  background-color: #ffffff;
   border-radius: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .manufacture-blocks {
+    max-width: 614px;
+    padding: 32px;
+    padding-right: 102px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .manufacture-blocks {
+    max-width: 518px;
+    padding: 32px 59px 34px 32px;
+  }
 }
 
 .manufacture-text {
@@ -70,6 +133,13 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+}
+
+@media only screen and (min-width: 768px) {
+  .manufacture-text {
+    padding-right: 140px;
+    margin-bottom: 28px;
+  }
 }
 
 .manufacture-list {
