@@ -1,5 +1,6 @@
 .products {
   background-color: #fafafa;
+  overflow: hidden;
 }
 
 /* Swiper */
@@ -45,8 +46,14 @@
   display: flex;
   justify-content: center;
   gap: 13px;
+  width: 100%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.8px) {
+  .products .swiper-pagination {
+    width: 703px;
+  }
+}
 /* .our-product-swiper-pagination-bullet {
   width: 13px;
   height: 13px;

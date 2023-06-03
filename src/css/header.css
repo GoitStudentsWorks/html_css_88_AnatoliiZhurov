@@ -68,8 +68,7 @@
     margin-right: 137px;
   }
 }
-.header-nav-item {
-}
+
 .header-nav-link {
   font-family: 'Montserrat';
   font-style: normal;
@@ -79,6 +78,12 @@
   letter-spacing: -0.02em;
   color: #111111;
 }
+
+=======
+.mobile-menu .active {
+  color: var(#fd9222);
+}
+
 
 /* Addresses */
 
@@ -93,10 +98,17 @@
 }
 
 .header-social-icon:hover {
+
   stroke: #fd9222;
 }
 .header-social-icon:focus {
   stroke: #fd9222;
+
+  stroke: var(#fd9222);
+}
+.header-social-icon:focus {
+  stroke: var(#fd9222);
+
 }
 
 .header-socials-list {
@@ -222,10 +234,9 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon:active {
-  stroke: #fd9222;
-}
-.social-icon:focus {
+.social-icon:active,
+.social-icon:focus,
+.social-icon:hover {
   stroke: #fd9222;
 }
 

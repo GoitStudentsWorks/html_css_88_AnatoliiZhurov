@@ -1,3 +1,121 @@
-.sellers {
-  background-color: hotpink;
+.sellers-item-top {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-orange);
+  margin-bottom: 32px;
+}
+.sellers-item {
+  color: var(--color-black);
+}
+
+.sellers-btn {
+  display: flex;
+  justify-content: center;
+  padding: 12px 19px 12px 20px;
+  width: 120px;
+  height: 41px;
+  min-width: 94px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  background-color: var(--color-orange);
+  margin: auto;
+  display: block;
+}
+
+.sellers-btn:hover,
+.sellers-btn:focus {
+  background-color: #fcf1e0;
+}
+
+.sellers-btn-text {
+  font-weight: 600;
+  color: #ffffff;
+}
+.sellers-btn-text:hover,
+.sellers-btn-text:focus {
+  color: var(--color-orange);
+}
+
+.sellers-list-img {
+  max-width: 335px;
+  margin-bottom: 20px;
+  margin-top: 32px;
+}
+
+.sellers-text {
+  max-width: 306px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .sellers {
+    height: 620px;
+  }
+  .sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sellers-text {
+    position: static;
+    width: 306px;
+    padding-right: 0;
+  }
+
+  .sellers-item-top {
+    margin-bottom: 50px;
+  }
+
+  .sellers-btn {
+    width: 144px;
+    height: 45px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .sellers-list-item {
+    position: relative;
+    bottom: 87px;
+  }
+
+  .sellers-list-img {
+    min-width: 344px;
+    margin-bottom: 0;
+  }
+
+  .sellers-list-img1 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers {
+    height: 630px;
+  }
+  .sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sellers-text {
+    width: 407px;
+    padding-right: 0;
+  }
+  .sellers-list-img {
+    max-width: 368px;
+  }
+  .sellers-text {
+    max-width: 407px;
+  }
+  .sellers-list-item {
+    position: relative;
+    bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 1199.8px) {
+  .sellers-list-img3 {
+    display: none;
+  }
 }
