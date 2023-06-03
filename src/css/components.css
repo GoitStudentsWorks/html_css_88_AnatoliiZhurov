@@ -84,7 +84,7 @@
 
 /* Overlay card */
 
-.overlay {
+.components-overlay {
   position: absolute;
   padding: 28px;
   width: 100%;
@@ -96,7 +96,7 @@
   transform: translate(0, -100%);
   transition: transform var(--anim-fast);
 }
-.components-list-item:hover .overlay {
+.components-list-item:hover .components-overlay {
   transform: translate(0, 0);
 }
 .overlay-taitle {
@@ -146,7 +146,7 @@
   .components-list {
     gap: 19px;
   }
-  .overlay {
+  .components-overlay {
     padding: 20px;
   }
   .components-overley-txt {
