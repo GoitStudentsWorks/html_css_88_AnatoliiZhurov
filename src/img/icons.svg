@@ -74,5 +74,18 @@
         d="M4.267 0.533h38.4c2.062 0 3.733 1.671 3.733 3.733v23.467c0 2.062-1.671 3.733-3.733 3.733h-38.4c-2.062 0-3.733-1.671-3.733-3.733v-23.467c0-2.062 1.671-3.733 3.733-3.733z">
       </path>
     </symbol>
-  </defs>
+    <symbol id="icon-x-close-white" viewBox="0 0 3fill="none" stroke="#fff" style="stroke: var(--color4, #fff)" s2 32">
+      <path troke-linejoin="round" stroke-linecap="round"
+        stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
+    </symbol>
+    <!-- play-icon -->
+    <symbol id="icon-play" viewBox="0 0 32 32">
+     <path fill="#f5f4f4" style="fill: var(--color1, #f5f4f4)" d="M11.886 23.771v-13.714l12.8 6.857-12.8 6.857z"></path>
+     <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9143" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543s-15.543-6.959-15.543-15.543c0-8.584 6.959-15.543 15.543-15.543s15.543 6.959 15.543 15.543z"></path>
+    </symbol>
+
+
+   </defs>
 </svg>
+
+
