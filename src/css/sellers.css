@@ -1,6 +1,6 @@
-.sellers {
-  background-color: blue;
-}
+/* .sellers {
+  background-color: tomato;
+} */
 
 .sellers-item-top {
   font-weight: 600;
@@ -13,37 +13,13 @@
   margin-bottom: 32px;
 }
 .sellers-item {
-  color: #111111;
-}
-@media screen and (min-width: 1200px) {
-  .sellers-list {
-    display: flex;
-  }
-}
-.sellers-list-img {
-  padding-bottom: 20px;
-}
-.sellers-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  padding-right: 49px;
-  padding-bottom: 32px;
-}
-@media screen and (max-width: 1199.8px) {
-  .sellers-list-img3 {
-    display: none;
-  }
+  color: var(--color-black);
 }
 
 .sellers-btn {
   display: flex;
   justify-content: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 20px;
-  padding-right: 19px;
+  padding: 12px 19px 12px 20px;
   width: 120px;
   height: 41px;
   min-width: 94px;
@@ -53,11 +29,80 @@
   margin: auto;
   display: block;
 }
+
+.sellers-btn:hover,
+.sellers-btn:focus {
+  background-color: #fcf1e0;
+}
+
 .sellers-btn-text {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2;
   color: #ffffff;
+}
+.sellers-btn-text:hover,
+.sellers-btn-text:focus {
+  color: var(--color-orange);
+}
+
+.sellers-list-img {
+  margin-bottom: 20px;
+}
+
+.sellers-list-img1 {
+  margin-bottom: 142px;
+}
+.sellers-text {
+  position: absolute;
+  width: 306px;
+  top: 496px;
+}
+@media screen and (min-width: 768px) {
+  .sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sellers-text {
+    position: static;
+    width: 306px;
+    padding-right: 0;
+  }
+  .sellers-btn {
+    width: 144px;
+    height: 45px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .sellers-list-item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .sellers-list-img {
+    max-width: 344px;
+  }
+
+  .sellers-list-img1 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sellers-text {
+    width: 407px;
+    padding-right: 0;
+  }
+  .sellers-list-img {
+    max-width: 368px;
+  }
+}
+
+@media screen and (max-width: 1199.8px) {
+  .sellers-list-img3 {
+    display: none;
+  }
 }
