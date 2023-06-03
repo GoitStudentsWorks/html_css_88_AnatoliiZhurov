@@ -1,7 +1,3 @@
-.products {
-  background-color: #fafafa;
-}
-
 .products .container {
   overflow: hidden;
 }
@@ -155,4 +151,13 @@
   background: var(--color-wite);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
+
+  transition: var(--anim-fast);
+}
+
+.our-products-price:hover,
+.our-products-price:focus {
+  background-color: var(--color-orange);
+  color: var(--color-txt-wite);
+  border: var(--color-orange);
 }
