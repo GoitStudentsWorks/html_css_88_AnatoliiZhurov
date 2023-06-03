@@ -1,5 +1,193 @@
 /* Дивись приклад налаштування у файлі Modal.css */
 
 .modalbynow {
-  background-color: coral;
+  /* background-color: coral; */
+  width: 311px;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+  overflow-y: scroll;
+}
+
+.js-overlay-modal {
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-btn {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+
+.modal-icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.modal-field {
+  padding: 32px 24px;
+}
+.modal-title {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.modal-title-accent {
+  color: var(--color-orange);
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-item {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 16px;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.modal-img {
+  background-color: #ffffff;
+}
+
+.modal-order-btn {
+  display: block;
+  padding: 6px 16px;
+  min-width: 70px;
+  height: 29px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.modal-field-form {
+}
+
+.modal-form {
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+.form-label-name {
+  display: flex;
+  flex-direction: column;
+}
+.form-input-name {
+}
+
+.form-input {
+  width: 263px;
+  height: 45px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.form-field {
+}
+
+.form-icon-tel {
+}
+
+.form-icon-card {
+}
+
+.form-comment {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  height: 91px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2px;
+}
+
+.form-btn {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 28px;
+  width: 109px;
+  height: 41px;
+  background: var(--color-orange);
+  border-radius: 100px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
 }
