@@ -7,6 +7,12 @@
   height: 404px;
 }
 
+@media only screen and (min-width: 768px) {
+  .reviews-container {
+    height: 463px;
+  }
+}
+
 .reviews-title {
   font-weight: 600;
     font-size: 20px;
@@ -16,7 +22,13 @@
     text-transform: uppercase;
     color: var(--color-black);
 
-    margin-bottom: 32px;
+    margin-bottom: 74px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-title {
+    margin-bottom: 91px;
+  }
 }
 
 .reviews-title-style {
@@ -26,16 +38,16 @@
 .reviews-list {
   display: flex;
   height: auto;
-  /* gap: 16px; */
-  margin-bottom: 20px;
+  /* gap: 20px; */
 }
 
 .reviews-list-item {
+  position: relative;
   max-width: 335px;
   height: 200px;
-  left: 0px;
-  /* top: 42px; */
   margin: 0 auto;
+  margin-right: 27px;
+  align-items: center;
   
   background: #FFFFFF;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -44,27 +56,45 @@
   margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .reviews-list-item {
+    max-width: 344px;
+    margin-bottom: 31px;
+    margin-right: 30px;
+  }
+}
+
 /* .swiper-wrapper {}
 
 .swiper-slide {} */
 
 .reviews-img {
+  position: absolute;
+  top: -42px;
+  left: calc(50% - 40px);
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 18px;
 }
 
 .reviews-list-title {
+  /* position: absolute;
+  top: 56px;
+  left: 50%; */
+  padding-top: 56px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
   color: var(--color-black);
 
+  /* transform: translateX(-50%); */
   margin-bottom: 24px;
 }
 
 .reviews-list-txt {
+  position: absolute;
+  bottom: 42px;
   font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -76,28 +106,38 @@
 .swiper-pagination {}
 
 .reviews-swiper-pagination {
-  top: unset;
-  bottom: unset;
+  position: static;
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-swiper-pagination {
+    margin-bottom: 50px;
+  }
 }
 
 .reviews-btn {
-  /* position: absolute; */
   display: flex;
   bottom: 0;
   padding: 12px 28px;
   gap: 14px;
   margin: 0 auto;
   
+  background-color: var(--color-wite);
   width: 165px;
   height: 41px;
   border: 1px solid #FD9222;
   border-radius: 100px
 }
 
-/* .swiper {
-  width: 600px;
-  height: 300px;
-} */
+@media only screen and (min-width: 1200px) {
+  .reviews-btn:hover,
+    .reviews-btn:focus {
+      background: var(--color-orange);
+    }
+}
+
+/* Slider Pagination */
 .swiper-pagination-bullet {
   width: 13px;
   height: 13px;
