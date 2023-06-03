@@ -71,9 +71,18 @@
         d="M25.143 28.078c3.269-2.702 5.344-6.72 5.344-11.209 0-4.487-2.073-8.507-5.344-11.207-3.269 2.699-5.344 6.72-5.344 11.207 0 4.489 2.073 8.507 5.344 11.209z">
       </path>
     </symbol>
-    <symbol id="icon-x-close-white" viewBox="0 0 32 32">
-      <path fill="none" stroke="#fff" style="stroke: var(--color4, #fff)" stroke-linejoin="round" stroke-linecap="round"
+    <symbol id="icon-x-close-white" viewBox="0 0 3fill="none" stroke="#fff" style="stroke: var(--color4, #fff)" s2 32">
+      <path troke-linejoin="round" stroke-linecap="round"
         stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
     </symbol>
-  </defs>
+    <!-- play-icon -->
+    <symbol id="icon-play" viewBox="0 0 32 32">
+     <path fill="#f5f4f4" style="fill: var(--color1, #f5f4f4)" d="M11.886 23.771v-13.714l12.8 6.857-12.8 6.857z"></path>
+     <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9143" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543s-15.543-6.959-15.543-15.543c0-8.584 6.959-15.543 15.543-15.543s15.543 6.959 15.543 15.543z"></path>
+    </symbol>
+
+
+   </defs>
 </svg>
+
+
