@@ -111,7 +111,7 @@
 /* ================================= Mobile adaptation ========================== */
 
 @media screen and (min-width: 375px) and (max-width: 767px){
-  .container {
+  .footer .container {
     max-width: 375px;
   }
 
@@ -142,7 +142,7 @@
 
 @media screen and (min-width: 768px) {
   
-  .container {
+ .footer .container {
     display: flex;
     flex-direction: column;
   }
@@ -174,7 +174,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
+  .footer .container {
     row-gap: 50px;
   }
 }
@@ -182,7 +182,7 @@
 /* ================================= Desctop adaptation ========================== */
 
 @media screen and (min-width: 1200px) {
-  .container {
+  .footer .container {
     row-gap: 64px;
   }
 }
