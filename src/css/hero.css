@@ -85,13 +85,21 @@
       url(../img/hero/bg-img_desc@2x.jpg);
   }
 }
+@media only screen and (max-width: 374px) {
+  .hero-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
-/* @media screen and (max-width: 767px) { */
 .hero {
   background-color: blueviolet;
 }
 .hero {
+  width: 95%; 
+  /* max-width: 375px; */
   max-width: 335px;
+  min-height: 335px;
   margin: 0 auto;
   padding-top: 395px;
   padding-bottom: 20px;
@@ -109,12 +117,14 @@
 }
 .hero-buttons {
   display: flex;
+  /* justify-content: space-between; */
   gap: 14px;
 }
 .buy-now {
   text-align: center;
   /* padding: 12px 28px; */
   margin-bottom: 32px;
+  
   width: 120px;
   height: 41px;
   font-weight: 600;
@@ -126,8 +136,10 @@
   background-color: #fd9222;
 }
 .made {
+  
   width: 159px;
   height: 41px;
+  /* padding: 12px 28px; */
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -155,7 +167,14 @@
   border-radius: 100%;
   background-color: #ffffff;
 }
-/* } */
+@media only screen and (max-width: 374px) {
+  .hero-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 704px;
