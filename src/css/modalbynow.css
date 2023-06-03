@@ -6,9 +6,8 @@
 }
 
 .overlay {
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -24,6 +23,8 @@
 }
 
 .modal {
+  position: relative;
+  width: 311px;
   opacity: 0;
   visibility: hidden;
 
@@ -46,6 +47,7 @@
   border-radius: 3px;
   background-color: #fff;
   transition: 0.3s all;
+  overflow-y: scroll;
 }
 .modal.active,
 .overlay.active {
@@ -54,13 +56,14 @@
 }
 
 .modal-btn {
-  width: 15px;
-  height: 15px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 20px;
   right: 20px;
-  fill: #444;
+  background-color: transparent;
   cursor: pointer;
+  border: none;
 }
 
 .modal-icon {
@@ -69,11 +72,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  fill: #444;
 }
+
 .modal-field {
   padding: 32px 24px;
 }
+
 .modal-title {
   display: block;
   font-weight: 600;
@@ -86,17 +91,19 @@
 }
 
 .modal-title-accent {
-  color: var(--color-orange);
+  color: #FD9222;
 }
 
-.modal-list {
+.modal-order-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 32px;
 }
 
 .modal-item {
   display: flex;
+  gap: 18px;
   padding-right: 16px;
   padding-left: 16px;
   align-items: center;
@@ -121,25 +128,35 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
+
 }
+
+.modal-order-btn:active {}
 
 .modal-field-form {
+  /* display: flex;
+  gap: 18px; */
 }
 
-.modal-form {
-}
+.modal-form {}
 
 .form-label {
   display: block;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
+  margin-bottom: 8px;
 }
+
 .form-label-name {
+  margin-bottom: 18px;
+}
+
+.form-input-name {
   display: flex;
   flex-direction: column;
-}
-.form-input-name {
+  gap: 14px;
+  margin-top: 8px;
 }
 
 .form-input {
@@ -153,15 +170,39 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
+  /* margin-bottom: 18px; */
 }
 
-.form-field {
+.form-input-tel {
+  padding-left: 50px;
+}
+
+.form-field-tel {
+  position: relative;
+  margin-bottom: 18px;
 }
 
 .form-icon-tel {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+
+.form-input-card {
+  margin-bottom: 18px;
+}
+
+.form-field-card {
+  position: relative;
+  margin-bottom: 18px;
 }
 
 .form-icon-card {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
 }
 
 .form-comment {
@@ -175,6 +216,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2px;
+  margin-bottom: 18px;
 }
 
 .form-btn {
@@ -183,11 +225,16 @@
   padding: 12px 28px;
   width: 109px;
   height: 41px;
-  background: var(--color-orange);
+  background: #FD9222;
   border-radius: 100px;
   border: none;
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.2;
   color: #ffffff;
+}
+
+.form-btn:active {
+  background-color: #FCF1E0;
+  color: #FD9222;
 }
