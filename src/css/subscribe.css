@@ -1,5 +1,10 @@
 .subscribe {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subcribe/subcribe-mob.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../img/subcribe/subcribe-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -8,10 +13,13 @@
   padding-bottom: 72px;
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 769px)
- {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 769px) {
   .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
       url(../img/subcribe/subcribe-mob2x.jpg);
   }
 }
@@ -25,7 +33,7 @@
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subcribe-text {
@@ -34,7 +42,7 @@
   margin-right: auto;
   margin-bottom: 24px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subcribe-btn {
@@ -49,20 +57,25 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.2;
-  background-color: #FD9222;
-  color: #FFFFFF;
+  background-color: #fd9222;
+  color: #ffffff;
   cursor: pointer;
-  transition: background-color #FCF1E0;
+  transition: background-color #fcf1e0;
 }
 
 .subcribe-btn:hover,
 .subcribe-btn:focus {
-  background-color: #FCF1E0;
-  color: #FD9222;
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 @media screen and (min-width: 769px) {
   .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subcribe/subcribe-tab.jpg);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subcribe/subcribe-tab.jpg);
   }
 
   .subcribe-tittle {
@@ -71,32 +84,43 @@
     line-height: 1.16;
     margin-bottom: 24px;
   }
-  .subcribe-text{
+  .subcribe-text {
     max-width: 467px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px)
- {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 769px) {
   .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
       url(../img/subcribe/subcribe-tab2x.jpg);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .subscribe {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subcribe/Subcribe.jpg);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
+      url(../img/subcribe/Subcribe.jpg);
   }
-
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px)
- {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) {
   .subscribe {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+      ),
       url(../img/subcribe/Subcribe@2x.jpg);
   }
 }
