@@ -1,14 +1,44 @@
 <div class="modalexplore">
- <div class="modal" data-modal="3">
-  <img src="../img/modal/tetiana-bykovets-mob@1x.jpg" alt="Fon">
-    <button class="modalexplore-btn" type="button"  js-modal-close>
-      <svg class="modalexplore-icon" width="12" height="12"> 
+  <div class="modal" data-modal="3">
+    <picture>
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../img/modal/tetiana-bykovets-tab@1x.jpg 1x,
+          ../img/modal/tetiana-bykovets-tab@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+
+      <!-- Phone screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../img/modal/tetiana-bykovets-mob@1x.jpg 1x,
+          ../img/modal/tetiana-bykovets-mob@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        class="modalexplore-image"
+        src="../img/modal/tetiana-bykovets-mob@1x.jpg"
+        alt="Fon"
+        width="538"
+        height="196"
+        loading="lazy"
+      />
+    </picture>
+    <button class="modalexplore-btn js-modal-close" type="button">
+      <svg class="modalexplore-icon" width="12" height="12">
         <use href="../img/icons.svg#close-modal"></use>
       </svg>
     </button>
+    <!-- <img src="../img/icons.svg#close-modal" alt="icon" width="12" height="12"> -->
     <div class="modalexplore-field">
       <h1 class="modalexplore-title">
-        EXPLORE OUR <span class="modalexplore-title-accent">NEW CHOCOLATE</span> FIRST!
+        EXPLORE OUR
+        <span class="modalexplore-title-accent">NEW CHOCOLATE</span> FIRST!
       </h1>
       <form class="modalexplore-form" name="email_form">
         <input
@@ -18,9 +48,11 @@
           placeholder="Enter your email"
           pattern=""
         />
-        <button class="modalexplore-form-btn" type="submit" js-modal-close>Submit</button>
+        <button class="modalexplore-form-btn js-modal-close" type="submit">
+          Submit
+        </button>
       </form>
     </div>
- </div>
+  </div>
 </div>
 <div class="overlay js-overlay-modal"></div>
