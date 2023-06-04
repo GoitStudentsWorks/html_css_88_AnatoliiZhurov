@@ -79,11 +79,9 @@
   color: #111111;
 }
 
-=======
 .mobile-menu .active {
   color: var(#fd9222);
 }
-
 
 /* Addresses */
 
@@ -98,17 +96,13 @@
 }
 
 .header-social-icon:hover {
-
   stroke: #fd9222;
 }
 .header-social-icon:focus {
-  stroke: #fd9222;
-
   stroke: var(#fd9222);
 }
 .header-social-icon:focus {
   stroke: var(#fd9222);
-
 }
 
 .header-socials-list {
