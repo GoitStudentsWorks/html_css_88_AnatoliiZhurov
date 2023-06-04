@@ -66,6 +66,10 @@
   border: none;
 }
 
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+
+
 .modalexplore-icon {
   display: inline-block;
   position: absolute;
