@@ -10,10 +10,22 @@
   .components-list-item {
     max-width: 335px;
   }
+  .components-img {
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .components-overlay-txt {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+  }
 }
 
 .taitle-components {
-  width: 283px;
+  max-width: 283px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
@@ -29,12 +41,12 @@
 }
 @media screen and (min-width: 768px) {
   .taitle-components {
-    width: 411px;
+    max-width: 411px;
   }
 }
 
 .components-txt {
-  width: 335px;
+  max-width: 335px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
@@ -42,7 +54,7 @@
 }
 
 .components-list-item {
-  width: 335px;
+  max-width: 335px;
   height: 270px;
   border-radius: 15px;
   background-color: #fd9222;
@@ -59,10 +71,12 @@
   background-color: var(--color-dark-violet);
 }
 
-.components-card-img {
+@media screen and (min-width: 375px){
+  .components-card-img {
   display: block;
   padding-top: 28px;
   padding-left: 56px;
+ }
 }
 
 .components-card-iner {
@@ -114,7 +128,7 @@
     height: 270px;
   }
   .components-txt {
-    width: 486px;
+    max-width: 486px;
   }
 }
 
