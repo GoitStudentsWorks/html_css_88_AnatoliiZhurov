@@ -1,8 +1,6 @@
-/* Дивись приклад налаштування у файлі Modal.css */
 .modalreview {
-  background-color: orchid;
 }
-.overlay/ {
+.overlay {
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
@@ -19,7 +17,7 @@
 
 /* Стили для модальных окон */
 
-.modal/ {
+.modal {
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
@@ -77,10 +75,6 @@
   }
 }
 .modalreview-icon {
-  /* display: inline-block;
-  position: absolute;
-  top: 6px;
-  left: 6px; */
   fill: #111111;
 }
 @media only screen and (min-width: 768px) {
@@ -106,8 +100,18 @@
     margin-bottom: 40px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .break-line {
+    display: none;
+  }
+}
 .modalreview-title-accent {
   color: var(--color-orange);
+}
+@media only screen and (min-width: 768px) {
+  .modalreview-title-accent {
+    display: inline-block;
+  }
 }
 .modalreview-field {
   padding: 32px 24px;
@@ -146,7 +150,7 @@
 }
 @media only screen and (min-width: 768px) {
   .modalreview-input-tel {
-    padding-left: 153px;
+    padding-left: 177px;
   }
 }
 .modalreview-field-tel {
@@ -220,6 +224,7 @@
   font-size: 14px;
   line-height: 1.2;
   color: var(--color-txt-wite);
+  transition: color var(--anim-fast), background-color var(--anim-fast);
 }
 @media only screen and (min-width: 768px) {
   .modalreview-form-btn {
@@ -228,7 +233,9 @@
     padding: 14px 40px;
   }
 }
-.modalreview-form-btn:active {
+.modalreview-form-btn:active,
+.modalreview-form-btn:hover,
+.modalreview-form-btn:focus {
   background-color: #fcf1e0;
   color: var(--color-orange);
 }

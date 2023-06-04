@@ -36,7 +36,6 @@
       url(./img/hero/bg-img_mob@2x.jpg);
   }
 }
-
 /* Tablet screen */
 @media screen and (min-width: 376px) {
   .hero {
@@ -92,9 +91,8 @@
   }
 }
 
-
 .hero {
-  width: 91%; 
+  width: 91%;
   /* max-width: 375px; */
   max-width: 335px;
   min-height: 335px;
@@ -103,6 +101,7 @@
   padding-bottom: 20px;
   border-radius: 30px;
 }
+
 .treat {
   max-width: 291px;
   height: 72px;
@@ -111,36 +110,31 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
-  color:var(--color-txt-wite);
+  color: var(--color-txt-wite);
 }
 .hero-buttons {
   display: flex;
   /* justify-content: space-between; */
   gap: 14px;
-  
 }
 
-.hero-item:first-child{
-
-flex-grow: 1;
+.hero-item:first-child {
+  flex-grow: 1;
 }
-.hero-item:last-child{
+.hero-item:last-child {
   min-width: 159px;
-
-  }
-  .hero-item{
-    
-    display: flex;
-    align-items: center;
-    
-  }
+}
+.hero-item {
+  display: flex;
+  align-items: center;
+}
 .buy-now {
   text-align: center;
   /* padding: 12px 28px; */
   width: 100%;
   height: 41px;
   /* width: 120px; */
-  
+
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -152,9 +146,9 @@ flex-grow: 1;
 }
 .buy-now:hover,
 .buy-now:focus,
-.buy-now:active{
+.buy-now:active {
   color: var(--color-orange);
-  background-color:#FCF1E0 ;
+  background-color: #fcf1e0;
 }
 
 .made {
@@ -176,9 +170,9 @@ flex-grow: 1;
 }
 .made:hover,
 .made:focus,
-.made:active{
+.made:active {
   color: var(--color-orange);
-border-color: var(--color-orange);
+  border-color: var(--color-orange);
 }
 .scroll {
   display: flex;
@@ -196,11 +190,9 @@ border-color: var(--color-orange);
 }
 .scroll:hover,
 .scroll:focus,
-.scroll:active{
-  color:var(--color-orange);
-
+.scroll:active {
+  color: var(--color-orange);
 }
-
 
 .hero-scroll-icon {
   width: 28px;
@@ -208,19 +200,18 @@ border-color: var(--color-orange);
   border-radius: 100%;
   fill: var(--color-orange);
   background-color: var(--color-txt-wite);
-  transition:fill var(--anim-fast), background-color var(--anim-fast);
+  transition: fill var(--anim-fast), background-color var(--anim-fast);
 }
 .scroll:hover .hero-scroll-icon,
 .scroll:focus .hero-scroll-icon,
-.scroll:active .hero-scroll-icon{
-  fill:var(--color-txt-wite);
- /* stroke:var(--color-txt-wite); */
-  background-color:var(--color-orange);
-
+.scroll:active .hero-scroll-icon {
+  fill: var(--color-txt-wite);
+  /* stroke:var(--color-txt-wite); */
+  background-color: var(--color-orange);
 }
 @media only screen and (max-width: 767px) {
- .hero-buttons  {
-    margin-bottom: 32px; 
+  .hero-buttons {
+    margin-bottom: 32px;
   }
 }
 
@@ -265,7 +256,7 @@ border-color: var(--color-orange);
 }
 @media screen and (min-width: 1200px) {
   .hero {
-  max-width: 1136px;
+    max-width: 1136px;
     padding-top: 381px;
   }
 }
