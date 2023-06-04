@@ -1,12 +1,9 @@
-/* Дивись приклад налаштування у файлі Modal.css */
 .modalexplore {
-  background-color: dodgerblue;
 }
-.overlay/ {
+.overlay {
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -19,7 +16,7 @@
 
 /* Стили для модальных окон */
 
-.modal/ {
+.modal {
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
@@ -74,8 +71,6 @@
     height: 28px;
   }
 }
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
 .modalexplore-icon {
   display: inline-block;
   position: absolute;
@@ -144,7 +139,8 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
-  align-self: stretch;
+  /* align-self: stretch; */
+  padding-right: 120px;
 }
 @media only screen and (min-width: 768px) {
   .modalexplore-form-input {
@@ -158,7 +154,7 @@
 }
 .modalexplore-form-btn {
   position: absolute;
-  right: 0;
+  right: 2px;
   bottom: 2px;
   display: flex;
   align-items: center;
@@ -172,6 +168,7 @@
   font-size: 14px;
   line-height: 1.2;
   color: #ffffff;
+  transition: color var(--anim-fast), background-color var(--anim-fast);
   /* z-index: 2; */
 }
 @media only screen and (min-width: 768px) {
@@ -182,7 +179,9 @@
     padding: 18px 33px;
   }
 }
-.modalexplore-form-btn:active {
+.modalexplore-form-btn:active,
+.modalexplore-form-btn:hover,
+.modalexplore-form-btn:focus {
   background-color: #fcf1e0;
   color: var(--color-orange);
 }
