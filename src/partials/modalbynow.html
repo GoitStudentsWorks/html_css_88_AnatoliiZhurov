@@ -1,6 +1,6 @@
 <div class="modalbynow">
   <div class="modal" data-modal="1">
-    <button class="modal-btn" type="button" js-modal-close>
+    <button class="modal-btn js-modal-close" type="button">
       <svg class="modal-icon" width="12" height="12">
         <use href="../img/icons.svg#close-modal"></use>
       </svg>
@@ -11,59 +11,123 @@
       </h1>
       <ul class="modal-order-list">
         <li class="modal-item">
-          <img
-            class="modal-img"
-            src="../img/modal/chocolate-1-mob@1x.png"
-            alt="chocolate-100"
-            width="84"
-            height="69"
-          />
+          <picture>
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/modal/chocolate-1-tab@1x.png 1x,
+                ../img/modal/chocolate-1-tab@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <!-- Phone screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/modal/chocolate-1-mob@1x.png 1x,
+                ../img/modal/chocolate-1-mob@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="modal-img"
+              src="../img/modal/chocolate-1-mob@1x.png"
+              alt="chocolate-100"
+              width="120"
+              height="107"
+              loading="lazy"
+            />
+          </picture>
           <button class="modal-order-btn">100 g</button>
         </li>
         <li class="modal-item">
-          <img
-            class="modal-img"
-            src="../img/modal/chocolate-2-mob@1x.png"
-            alt="chocolate-200"
-            width="84"
-            height="69"
-          />
+          <picture>
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/modal/chocolate-2-tab@1x.png 1x,
+                ../img/modal/chocolate-2-tab@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <!-- Phone screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/modal/chocolate-2-mob@1x.png 1x,
+                ../img/modal/chocolate-2-mob@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="modal-img"
+              src="../img/modal/chocolate-2-mob@1x.png"
+              alt="chocolate-200"
+              width="120"
+              height="107"
+              loading="lazy"
+            />
+          </picture>
           <button class="modal-order-btn">200 g</button>
         </li>
         <li class="modal-item">
-          <img
-            class="modal-img"
-            src="../img/modal/chocolate-3-mob@1x.png"
-            alt="chocolate-300"
-            width="84"
-            height="69"
-          />
+          <picture>
+            <!-- Tablet screen -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/modal/chocolate-3-tab@1x.png 1x,
+                ../img/modal/chocolate-3-tab@2x.png 2x
+              "
+              type="image/png"
+            />
+
+            <!-- Phone screen -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/modal/chocolate-3-mob@1x.png 1x,
+                ../img/modal/chocolate-3-mob@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="modal-img"
+              src="../img/modal/tetiana-bykovets-mob@1x.jpg"
+              alt="chocolate-300"
+              width="120"
+              height="111"
+              loading="lazy"
+            />
+          </picture>
           <button class="modal-order-btn">300 g</button>
         </li>
       </ul>
       <div class="modal-field-form">
         <form class="modal-form" name="contacts_form">
-          <label class="form-label-name form-label" for="name"
-            >Personal information</label
-          >
-          <div class="form-input-name">
-            <input
-              class="form-input"
-              type="text"
-              id="name"
-              name="user_name"
-              placeholder="Name"
-              pattern=""
-            />
-            <input
-              class="form-input"
-              type="text"
-              name="user_surname"
-              placeholder="Surname"
-              pattern=""
-            />
-          </div>
-
+          <label class="form-label-name form-label"
+            >Personal information
+            <div class="form-input-name">
+              <input
+                class="form-input"
+                type="text"
+                name="user_name"
+                placeholder="Name"
+                pattern=""
+              />
+              <input
+                class="form-input"
+                type="text"
+                name="user_surname"
+                placeholder="Surname"
+                pattern=""
+              />
+            </div>
+          </label>
           <label class="form-label" for="email">Email</label>
           <div class="form-field-email">
             <input
@@ -89,7 +153,7 @@
               <svg class="form-icon-tel" width="24" height="24">
                 <use href="../img/icons.svg#icon-flag-icon"></use>
               </svg>
-              <p class="modal-number">+380</p>
+              <span class="modal-number">+380</span>
             </div>
           </div>
           <label class="form-label" for="card">Card number</label>
@@ -114,7 +178,7 @@
             rows="6"
             placeholder="Enter text"
           ></textarea>
-          <button class="form-btn" type="submit" js-modal-close>Submit</button>
+          <button class="form-btn js-modal-close" type="submit">Submit</button>
         </form>
       </div>
     </div>

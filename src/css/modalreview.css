@@ -25,7 +25,7 @@
   visibility: hidden;
 
   /*  Установаем ширину окна  */
-  width: 100%;
+  width: 95%;
   max-width: 311px;
 
   /*  Центрируем и задаем z-index */
@@ -52,10 +52,11 @@
   opacity: 1;
   visibility: visible;
 }
-
-.modalreview {}
-  
-
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 517px;
+  }
+}
 .modalreview-btn {
   display: flex;
   align-items: center;
@@ -69,7 +70,12 @@
   cursor: pointer;
   border: none;
 }
-
+@media only screen and (min-width: 768px) {
+  .modalreview-btn {
+    width: 28px;
+    height: 28px;
+  }
+}
 .modalreview-icon {
   /* display: inline-block;
   position: absolute;
@@ -77,23 +83,39 @@
   left: 6px; */
   fill: #111111;
 }
-
+@media only screen and (min-width: 768px) {
+  .modalreview-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
 .modalreview-title {
   display: block;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
-
+@media only screen and (min-width: 768px) {
+  .modalreview-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+  }
+}
 .modalreview-title-accent {
   color: var(--color-orange);
 }
 .modalreview-field {
   padding: 32px 24px;
+}
+@media only screen and (min-width: 768px) {
+  .modalreview-field {
+    padding: 40px 40px;
+  }
 }
 .modalreview-form {
   display: flex;
@@ -106,11 +128,26 @@
   width: 100%;
   height: 45px;
   padding: 14px 18px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
 }
+@media only screen and (min-width: 768px) {
+  .modalreview-input {
+    height: 66px;
+    padding: 22px 24px;
+    font-size: 18px;
+  }
+}
 .modalreview-input-tel {
-  padding-left: 92px;
+  padding-left: 106px;
+}
+@media only screen and (min-width: 768px) {
+  .modalreview-input-tel {
+    padding-left: 153px;
+  }
 }
 .modalreview-field-tel {
   position: relative;
@@ -123,14 +160,19 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  /* border-right: #1111110d; */
+  padding-right: 8px;
+  border-right: 2px solid #1111110d;
 }
-/* .modalreview-icon-tel {
-  position: absolute;
-  top: 50%;
-  left: 18px;
-  transform: translateY(-50%);
-} */
+@media only screen and (min-width: 768px) {
+  .modalreview-leftinput {
+    left: 24px;
+    padding-right: 32px;
+  }
+}
+.modalreview-icon-tel {
+  width: 32px;
+  height: 32px;
+}
 .modalreview-number {
   /* position: absolute;
   top: 50%;
@@ -141,6 +183,11 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: #000000;
+}
+@media only screen and (min-width: 768px) {
+  .modalreview-number {
+    font-size: 18px;
+  }
 }
 .modalreview-comment {
   display: block;
@@ -154,7 +201,12 @@
   font-size: 14px;
   line-height: 1.2px;
 }
-
+@media only screen and (min-width: 768px) {
+  .modalreview-comment {
+    padding: 22px 24px;
+    font-size: 18px;
+  }
+}
 .modalreview-form-btn {
   display: flex;
   align-items: center;
@@ -168,4 +220,15 @@
   font-size: 14px;
   line-height: 1.2;
   color: var(--color-txt-wite);
+}
+@media only screen and (min-width: 768px) {
+  .modalreview-form-btn {
+    width: 117px;
+    height: 45px;
+    padding: 14px 40px;
+  }
+}
+.modalreview-form-btn:active {
+  background-color: #fcf1e0;
+  color: var(--color-orange);
 }
