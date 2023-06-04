@@ -36,7 +36,6 @@
       url(../img/hero/bg-img_mob@2x.jpg);
   }
 }
-
 /* Tablet screen */
 @media screen and (min-width: 376px) {
   .hero {
@@ -96,15 +95,16 @@
   background-color: blueviolet;
 }
 .hero {
-  width: 95%; 
-  /* max-width: 375px; */
-  max-width: 335px;
+  width: 95%;
+  max-width: 375px;
+  /* max-width: 335px; */
   min-height: 335px;
   margin: 0 auto;
   padding-top: 395px;
   padding-bottom: 20px;
   border-radius: 30px;
 }
+
 .treat {
   max-width: 291px;
   height: 72px;
@@ -113,7 +113,12 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
-  color:#ffffff;
+  color: #ffffff;
+}
+@media only screen and (max-width: 320px) {
+  .treat{
+   margin-bottom: 64px;
+ }
 }
 .hero-buttons {
   display: flex;
@@ -124,7 +129,7 @@
   text-align: center;
   /* padding: 12px 28px; */
   margin-bottom: 32px;
-  
+
   width: 120px;
   height: 41px;
   font-weight: 600;
@@ -134,9 +139,16 @@
   border: none;
   color: #ffffff;
   background-color: #fd9222;
+  transition: color 300ms ease-in, background-color 300ms ease-in;
+}
+.buy-now:hover,
+.buy-now:focus,
+.buy-now:active {
+  color: #FD9222;
+  background-color: #FCF1E0;
+ 
 }
 .made {
-  
   width: 159px;
   height: 41px;
   /* padding: 12px 28px; */
@@ -147,6 +159,14 @@
   border-radius: 100px;
   color: #ffffff;
   background-color: transparent;
+  transition: color 300ms ease-in, background-color 300ms ease-in, border 300ms ease-in;
+}
+.made:hover,
+.made:focus,
+.made:active{
+  color: #FD9222;
+  background-color: #ffffff;
+  border: 1px solid #FD9222;
 }
 .scroll {
   display: flex;
@@ -160,12 +180,26 @@
   letter-spacing: -0.03em;
   color: #ffffff;
   background-color: transparent;
+  transition: color border 300ms ease-in, background-color border 300ms ease-in;
+}
+.scroll:hover,
+.scroll:focus,
+.scroll:active{
+  color: #FD9222;
+  background-color:  #ffffff;
+
 }
 .hero-scroll-icon {
   width: 28px;
   height: 28px;
   border-radius: 100%;
-  background-color: #ffffff;
+  background-color:  #ffffff;
+}
+.hero-scroll-icon:hover, 
+.hero-scroll-icon:focus,
+.hero-scroll-icon:active{
+  fill: #ffffff;
+  background-color:  #FD9222;
 }
 @media only screen and (max-width: 374px) {
   .hero-buttons {
