@@ -17,7 +17,7 @@
 
 /* Стили для модальных окон */
 
-.modal {
+.modal/ {
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;

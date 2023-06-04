@@ -1,51 +1,55 @@
 <div class="modalreview">
   <div class="modal" data-modal="2">
-  <button class="modal-btn" type="button" js-modal-close>
-    <svg class="modal-icon" width="24" height="24">
+  <button class="modalreview-btn" type="button" js-modal-close>
+    <svg class="modalreview-icon" width="12" height="12">
       <use href="../img/icons.svg#close-modal"></use>
     </svg>
   </button>
-    <h1 class="modal-title">
-      LEAVE A REVIEW ABOUT
-      <span class="modal-title-accent">OUR CHOCOLATE</span>
-    </h1>
-    <form class="modal-form" name="review_form">
-      <input
-        class="modal-input"
-        type="text"
-        name="user_name"
-        placeholder="Name"
-        pattern=""
-      />
-      <input
-        class="modal-input"
-        type="email"
-        name="user_email"
-        placeholder="Enter your email"
-        pattern=""
-      />
-      <!-- <label class="form-label" for="tel"></label> -->
-      <div class="form-field">
+    <div class="modalreview-field">
+      <h1 class="modalreview-title">
+        LEAVE A REVIEW ABOUT
+        <span class="modalreview-title-accent">OUR CHOCOLATE</span>
+      </h1>
+      <form class="modalreview-form" name="review_form">
         <input
-          class="modal-input"
-          type="tel"
-          name="user_phone"
-          id="tel"
-          placeholder="Phone number"
+          class="modalreview-input"
+          type="text"
+          name="user_name"
+          placeholder="Name"
           pattern=""
         />
-        <svg class="form-icon-tel" width="24" height="24">
-          <use href="../img/icons.svg#icon-flag-icon"></use>
-        </svg>
-      </div>
-      <textarea
-        class="form-comment"
-        name="comment"
-        rows="6"
-        placeholder="Enter text"
-      ></textarea>
-      <button class="form-btn" type="submit" js-modal-close>Send</button>
-    </form>
+        <input
+          class="modalreview-input"
+          type="email"
+          name="user_email"
+          placeholder="Enter your email"
+          pattern=""
+        />
+        <div class="modalreview-field-tel">
+          <input
+            class="modalreview-input modalreview-input-tel"
+            type="tel"
+            name="user_phone"
+            id="tel"
+            placeholder="Phone number"
+            pattern=""
+          />
+          <div class="modalreview-leftinput">
+            <svg class="modalreview-icon-tel" width="24" height="24">
+              <use href="../img/icons.svg#icon-flag-icon"></use>
+            </svg>
+            <p class="modalreview-number">+380</p>
+          </div>
+        </div>
+        <textarea
+          class="modalreview-comment"
+          name="comment"
+          rows="6"
+          placeholder="Enter text"
+        ></textarea>
+        <button class="modalreview-form-btn" type="submit" js-modal-close>Send</button>
+      </form>
+    </div>
   </div>
 </div>
 <div class="overlay js-overlay-modal"></div>

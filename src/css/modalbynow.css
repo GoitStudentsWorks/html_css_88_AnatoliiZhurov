@@ -2,12 +2,15 @@
 
 .modalbynow {
   /* background-color: coral; */
-  width: 311px;
+  /* width: 311px;
+  padding: 32px 24px; */
 }
 
 .overlay {
-  opacity: 1;
+  /* Скрываем подложку  */
+  opacity: 0;
   visibility: hidden;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -16,21 +19,18 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
-  overflow-y: scroll;
 }
 
-.js-overlay-modal {
-}
+/* Стили для модальных окон */
 
 .modal {
-  position: relative;
-  width: 311px;
+  /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
 
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 500px;
+  max-width: 311px;
 
   /*  Центрируем и задаем z-index */
   position: fixed;
@@ -42,25 +42,31 @@
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 30px;
-  border-radius: 3px;
+  /* text-align: center; */
+  /* padding: 30px; */
+  border-radius: 15px;
   background-color: #fff;
   transition: 0.3s all;
-  overflow-y: scroll;
+  overflow: scroll;
 }
+
+/* Стили для активных классов подложки и окна */
+
 .modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  overflow: scroll;
 }
+
+/* Стили для кнопки закрытия */
 
 .modal-btn {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 14px;
+  right: 14px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -72,7 +78,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: #444;
+  /* fill: #444; */
 }
 
 .modal-field {
@@ -91,7 +97,7 @@
 }
 
 .modal-title-accent {
-  color: #FD9222;
+  color: var(--color-orange);
 }
 
 .modal-order-list {
@@ -128,20 +134,22 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-
 }
 
-.modal-order-btn:active {}
+.modal-order-btn:active {
+}
 
 .modal-field-form {
   /* display: flex;
   gap: 18px; */
 }
 
-.modal-form {}
+.modal-form {
+}
 
 .form-label {
   display: block;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -160,7 +168,7 @@
 }
 
 .form-input {
-  width: 263px;
+  width: 100%;
   height: 45px;
   padding: 14px 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -173,22 +181,38 @@
   /* margin-bottom: 18px; */
 }
 
-.form-input-tel {
-  padding-left: 50px;
-}
-
 .form-field-tel {
   position: relative;
   margin-bottom: 18px;
 }
-
-.form-icon-tel {
+.form-input-tel {
+  padding-left: 92px;
+}
+.modal-leftinput {
   position: absolute;
   top: 50%;
   left: 18px;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-
+.form-icon-tel {
+  /* position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%); */
+}
+.modal-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.form-field-email {
+  margin-bottom: 18px;
+}
 .form-input-card {
   margin-bottom: 18px;
 }
@@ -221,20 +245,20 @@
 
 .form-btn {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding: 12px 28px;
   width: 109px;
   height: 41px;
-  background: #FD9222;
+  background: var(--color-orange);
   border-radius: 100px;
   border: none;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
-  color: #ffffff;
+  color: var(--color-txt-wite);
 }
 
 .form-btn:active {
-  background-color: #FCF1E0;
-  color: #FD9222;
+  background-color: #fcf1e0;
+  color: var(--color-orange);
 }
