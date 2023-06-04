@@ -10,7 +10,6 @@
   /* Скрываем подложку  */
   opacity: 0;
   visibility: hidden;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -34,9 +33,11 @@
 
   /*  Центрируем и задаем z-index */
   position: fixed;
+  /* position: absolute; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* transform: translate(-50%, 0); */
   z-index: 30;
   /* Должен быть выше чем у подложки*/
 
@@ -47,7 +48,10 @@
   border-radius: 15px;
   background-color: #fff;
   transition: 0.3s all;
-  overflow: scroll;
+  /* overflow: scroll; */
+}
+.modalbynow .modal {
+  height: 95%;
 }
 
 .modal.active,
@@ -169,7 +173,9 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
+  transition: color var(--anim-fast), background-color var(--anim-fast);
 }
+
 @media only screen and (min-width: 768px) {
   .modal-order-btn {
     padding-top: 8px;
@@ -177,7 +183,9 @@
     width: 96px;
   }
 }
-.modal-order-btn:active {
+.modal-order-btn:active,
+.modal-order-btn:hover,
+.modal-order-btn:focus {
   background-color: var(--color-orange);
   color: var(--color-txt-wite);
 }
@@ -204,12 +212,6 @@
 }
 .form-label-name {
   margin-bottom: 18px;
-}
-@media only screen and (min-width: 768px) {
-  .form-label-name {
-    /* display: flex;
-    flex-direction: row; */
-  }
 }
 .form-input-name {
   display: flex;
@@ -355,6 +357,7 @@
   font-size: 14px;
   line-height: 1.2;
   color: var(--color-txt-wite);
+  transition: color var(--anim-fast), background-color var(--anim-fast);
 }
 @media only screen and (min-width: 768px) {
   .form-btn {
@@ -365,7 +368,9 @@
     line-height: 1.2;
   }
 }
-.form-btn:active {
+.form-btn:active,
+.form-btn:hover,
+.form-btn:focus {
   background-color: #fcf1e0;
   color: var(--color-orange);
 }
