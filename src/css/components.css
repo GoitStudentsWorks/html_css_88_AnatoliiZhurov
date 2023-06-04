@@ -10,6 +10,18 @@
   .components-list-item {
     max-width: 335px;
   }
+  .components-img {
+   margin-left: auto;
+   margin-right: auto;
+  }
+  .components-overlay-txt {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    /* overflow-y: scroll; */
+    overflow: hidden;
+  }
 }
 
 .taitle-components {
@@ -42,7 +54,7 @@
 }
 
 .components-list-item {
-  width: 335px;
+  max-width: 335px;
   height: 270px;
   border-radius: 15px;
   background-color: #fd9222;
@@ -59,10 +71,12 @@
   background-color: var(--color-dark-violet);
 }
 
-.components-card-img {
+@media screen and (min-width: 375px){
+  .components-card-img {
   display: block;
   padding-top: 28px;
   padding-left: 56px;
+ }
 }
 
 .components-card-iner {
