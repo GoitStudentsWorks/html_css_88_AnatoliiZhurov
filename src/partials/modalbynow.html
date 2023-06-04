@@ -1,7 +1,7 @@
-<div class="modalbynow overlay js-overlay-modal" data-modal="1">
-  <div class="modal">
+<div class="modalbynow">
+  <div class="modal" data-modal="1">
     <button class="modal-btn" type="button" js-modal-close>
-      <svg class="modal-icon" width="24" height="24">
+      <svg class="modal-icon" width="12" height="12">
         <use href="../img/icons.svg#close-modal"></use>
       </svg>
     </button>
@@ -9,7 +9,7 @@
       <h1 class="modal-title">
         <span class="modal-title-accent">BUY </span>NOW
       </h1>
-      <ul class="modal-list">
+      <ul class="modal-order-list">
         <li class="modal-item">
           <img
             class="modal-img"
@@ -43,11 +43,14 @@
       </ul>
       <div class="modal-field-form">
         <form class="modal-form" name="contacts_form">
-          <label class="form-label-name form-label"
-            >Personal information
+          <label class="form-label-name form-label" for="name"
+            >Personal information</label
+          >
+          <div class="form-input-name">
             <input
               class="form-input"
               type="text"
+              id="name"
               name="user_name"
               placeholder="Name"
               pattern=""
@@ -58,32 +61,39 @@
               name="user_surname"
               placeholder="Surname"
               pattern=""
-            /> </label
-          ><label class="form-label" for="email">Email</label
-          ><input
-            class="form-input"
-            type="email"
-            name="user_email"
-            id="email"
-            placeholder="Enter your email"
-            pattern=""
-          />
-          <label class="form-label" for="tel">Phone number</label>
-          <div class="form-field">
+            />
+          </div>
+
+          <label class="form-label" for="email">Email</label>
+          <div class="form-field-email">
             <input
-              class="form-input"
+              class="form-input form-input-email"
+              type="email"
+              name="user_email"
+              id="email"
+              placeholder="Enter your email"
+              pattern=""
+            />
+          </div>
+          <label class="form-label" for="tel">Phone number</label>
+          <div class="form-field-tel">
+            <input
+              class="form-input form-input-tel"
               type="tel"
               name="user_phone"
               id="tel"
               placeholder="Phone number"
               pattern=""
             />
-            <svg class="form-icon-tel" width="24" height="24">
-              <use href="../img/icons.svg#icon-flag-icon"></use>
-            </svg>
+            <div class="modal-leftinput">
+              <svg class="form-icon-tel" width="24" height="24">
+                <use href="../img/icons.svg#icon-flag-icon"></use>
+              </svg>
+              <p class="modal-number">+380</p>
+            </div>
           </div>
           <label class="form-label" for="card">Card number</label>
-          <div class="form-field">
+          <div class="form-field-card">
             <input
               class="form-input"
               type="number"
@@ -110,3 +120,4 @@
     </div>
   </div>
 </div>
+<div class="overlay js-overlay-modal"></div>

@@ -1,7 +1,7 @@
 <!-- Це тільки приклад, налаштовувати треба самостійно -->
 
 <!-- Slider main container -->
-<section class="reviews">
+<section class="reviews" id="chocolate_is_loved">
   <div class="swiper container reviews-container">
     <h2 class="reviews-title">
       <span class="reviews-title-style">chocolate</span> is loved
@@ -10,6 +10,10 @@
       <li class="swiper-slide reviews-list-item">
         <img
           class="reviews-img"
+          srcset="
+            ../img/reviews/Ellipse_review1@1x.jpg 1x,
+            ../img/reviews/Ellipse_review1@2x.jpg 2x
+          "
           src="../img/reviews/Ellipse_review1@1x.jpg"
           alt=""
           width="80"
@@ -24,6 +28,10 @@
       <li class="swiper-slide reviews-list-item">
         <img
           class="reviews-img"
+          srcset="
+            ../img/reviews/Ellipse_review2@1x.jpg 1x,
+            ../img/reviews/Ellipse_review2@2x.jpg 2x
+          "
           src="../img/reviews/Ellipse_review2@1x.jpg"
           alt=""
           width="80"
@@ -38,6 +46,10 @@
       <li class="swiper-slide reviews-list-item">
         <img
           class="reviews-img"
+          srcset="
+            ../img/reviews/Ellipse_review3@1x.jpg 1x,
+            ../img/reviews/Ellipse_review3@2x.jpg 2x
+          "
           src="../img/reviews/Ellipse_review3@1x.jpg"
           alt=""
           width="80"
@@ -52,6 +64,10 @@
       <li class="swiper-slide reviews-list-item">
         <img
           class="reviews-img"
+          srcset="
+            ../img/reviews/Ellipse_review4@1x.jpg 1x,
+            ../img/reviews/Ellipse_review4@2x.jpg 2x
+          "
           src="../img/reviews/Ellipse_review4@1x.jpg"
           alt=""
           width="80"
@@ -66,6 +82,10 @@
       <li class="swiper-slide reviews-list-item">
         <img
           class="reviews-img"
+          srcset="
+            ../img/reviews/Ellipse_review5@1x.jpg 1x,
+            ../img/reviews/Ellipse_review5@2x.jpg 2x
+          "
           src="../img/reviews/Ellipse_review5@1x.jpg"
           alt=""
           width="80"
@@ -81,6 +101,10 @@
       <li class="swiper-slide reviews-list-item">
         <img
           class="reviews-img"
+          srcset="
+            ../img/reviews/Ellipse_review6@1x.jpg 1x,
+            ../img/reviews/Ellipse_review6@2x.jpg 2x
+          "
           src="../img/reviews/Ellipse_review6@1x.jpg"
           alt=""
           width="80"
@@ -94,7 +118,9 @@
       </li>
     </ul>
     <div class="swiper-pagination reviews-swiper-pagination"></div>
-    <button type="button" class="reviews-btn">Leave a review</button>
+    <button type="button" class="reviews-btn js-open-modal" data-modal="2">
+      Leave a review
+    </button>
     <!-- Additional required wrapper -->
     <!-- <div class="swiper-wrapper"> -->
     <!-- Slides -->

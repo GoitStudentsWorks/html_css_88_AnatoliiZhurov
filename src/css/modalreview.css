@@ -2,3 +2,170 @@
 .modalreview {
   background-color: orchid;
 }
+.overlay/ {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal/ {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 311px;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  /* text-align: center;
+  padding: 30px; */
+  border-radius: 15px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalreview {}
+  
+
+.modalreview-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.modalreview-icon {
+  /* display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 6px; */
+  fill: #111111;
+}
+
+.modalreview-title {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.modalreview-title-accent {
+  color: var(--color-orange);
+}
+.modalreview-field {
+  padding: 32px 24px;
+}
+.modalreview-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.modalreview-input {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+}
+.modalreview-input-tel {
+  padding-left: 92px;
+}
+.modalreview-field-tel {
+  position: relative;
+}
+.modalreview-leftinput {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* border-right: #1111110d; */
+}
+/* .modalreview-icon-tel {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+} */
+.modalreview-number {
+  /* position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%); */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.modalreview-comment {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  height: 91px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2px;
+}
+
+.modalreview-form-btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 28px;
+  width: 93px;
+  height: 41px;
+  background: var(--color-orange);
+  border-radius: 100px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--color-txt-wite);
+}
