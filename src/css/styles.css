@@ -54,11 +54,13 @@ body {
   background-color: #fafafa;
 }
 
-section:not(:last-child) {
-  margin-bottom: 72px;
+@media only screen and (min-width: 767px) {
+  section:not(:last-child) {
+    margin-bottom: 72px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
   section:not(:last-child) {
     margin-bottom: 100px;
   }
