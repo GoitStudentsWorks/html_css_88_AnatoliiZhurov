@@ -10,7 +10,10 @@
   .components-list-item {
     max-width: 335px;
   }
+  .components-card-img{
+   }
   .components-img {
+    padding-top: 28px;
    margin-left: auto;
    margin-right: auto;
   }
@@ -103,6 +106,10 @@
 
 .components-list-item:hover .components-card-iner {
   transform: rotateY(180deg);
+}
+.components-list-item:hover {
+ border: none;
+ background-color: transparent;
 }
 
 .components-list-card,
