@@ -1,5 +1,17 @@
 /* Unique components section */
 
+@media screen and (max-width: 374px) {
+  .taitle-components {
+    max-width: 283px;
+  }
+  .components-txt {
+    max-width: 335px;
+  }
+  .components-list-item {
+    max-width: 335px;
+  }
+}
+
 .taitle-components {
   width: 283px;
   margin-left: auto;
