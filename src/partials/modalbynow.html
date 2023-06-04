@@ -43,30 +43,31 @@
       </ul>
       <div class="modal-field-form">
         <form class="modal-form" name="contacts_form">
-          <label class="form-label-name form-label"
-            >Personal information
-            <div class="form-input-name">
-              <input
-                class="form-input"
-                type="text"
-                name="user_name"
-                placeholder="Name"
-                pattern=""
-              />
-              <input
-                class="form-input"
-                type="text"
-                name="user_surname"
-                placeholder="Surname"
-                pattern=""
-              />
-            </div>
-            </label
-          ><label class="form-label" for="email">Email</label
+          <label class="form-label-name form-label" for="name"
+            >Personal information</label
           >
+          <div class="form-input-name">
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Name"
+              pattern=""
+            />
+            <input
+              class="form-input"
+              type="text"
+              name="user_surname"
+              placeholder="Surname"
+              pattern=""
+            />
+          </div>
+
+          <label class="form-label" for="email">Email</label>
           <div class="form-field-email">
             <input
-              class="form-input  form-input-email"
+              class="form-input form-input-email"
               type="email"
               name="user_email"
               id="email"
@@ -77,16 +78,19 @@
           <label class="form-label" for="tel">Phone number</label>
           <div class="form-field-tel">
             <input
-              class="form-input"
+              class="form-input form-input-tel"
               type="tel"
               name="user_phone"
               id="tel"
               placeholder="Phone number"
               pattern=""
             />
-            <svg class="form-icon-tel" width="24" height="24">
-              <use href="../img/icons.svg#icon-flag-icon"></use>
-            </svg>
+            <div class="modal-leftinput">
+              <svg class="form-icon-tel" width="24" height="24">
+                <use href="../img/icons.svg#icon-flag-icon"></use>
+              </svg>
+              <p class="modal-number">+380</p>
+            </div>
           </div>
           <label class="form-label" for="card">Card number</label>
           <div class="form-field-card">
