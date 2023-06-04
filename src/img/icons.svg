@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+    <!-- play-icon -->
+    <symbol id="icon-play" viewBox="0 0 44 44">
+      <path d="M15 33V12L35 22.5L15 33Z" fill="#F5F4F4"/>
+      <circle cx="22" cy="22" r="21.5" fill="none" stroke="#FFFFFF"/>
+    </symbol>
     <!-- Socials reseted -->
     <symbol id="instagram" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667"
