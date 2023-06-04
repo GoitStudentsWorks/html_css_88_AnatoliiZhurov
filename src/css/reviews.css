@@ -148,12 +148,16 @@
   height: 41px;
   border: 1px solid #FD9222;
   border-radius: 100px
+
+  
 }
 
 @media only screen and (min-width: 1200px) {
   .reviews-btn:hover,
     .reviews-btn:focus {
+      color: var(--color-wite);
       background: var(--color-orange);
+      transition: var(--anim-fast);
     }
 }
 
