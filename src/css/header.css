@@ -77,9 +77,12 @@
   line-height: 16px;
   letter-spacing: -0.02em;
   color: #111111;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.mobile-menu .active {
+.header-nav-link:hover {
+  color: var(#fd9222);
+}
+.header-nav-link:focus {
   color: var(#fd9222);
 }
 
@@ -97,9 +100,6 @@
 
 .header-social-icon:hover {
   stroke: #fd9222;
-}
-.header-social-icon:focus {
-  stroke: var(#fd9222);
 }
 .header-social-icon:focus {
   stroke: var(#fd9222);
