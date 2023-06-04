@@ -77,13 +77,17 @@
   line-height: 16px;
   letter-spacing: -0.02em;
   color: #111111;
+  transition: transform 250ms ease-in-out;
 }
 
-=======
-.mobile-menu .active {
+.header-nav-link:hover,
+.header-nav-link:focus {
   color: var(#fd9222);
 }
 
+.mobile-menu .active {
+  color: var(#fd9222);
+}
 
 /* Addresses */
 
@@ -98,7 +102,6 @@
 }
 
 .header-social-icon:hover {
-
   stroke: #fd9222;
 }
 .header-social-icon:focus {
@@ -108,7 +111,6 @@
 }
 .header-social-icon:focus {
   stroke: var(#fd9222);
-
 }
 
 .header-socials-list {
