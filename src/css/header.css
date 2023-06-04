@@ -84,7 +84,14 @@
   line-height: 16px;
   letter-spacing: -0.02em;
   color: #111111;
+  transition: transform 250ms ease-in-out;
 }
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(#fd9222);
+}
+
 .mobile-menu .active {
   color: var(#fd9222);
 }
