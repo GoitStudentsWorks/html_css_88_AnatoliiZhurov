@@ -56,14 +56,14 @@
 
   fill: var(--color-wite);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-fast);
 }
 
 .footer-social-link {
   fill: var(--color-black);
   stroke: var(--color-txt-wite);
 
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: stroke var(--anim-fast);
 }
 
 .footer-social-link:hover,
@@ -82,7 +82,7 @@
 
   color: var(--color-wite);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim-fast);
 }
 
 .addres-link:hover,
@@ -103,7 +103,7 @@
 
   color: var(--color-wite);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim-fast);
 }
 
 .navigation-link:hover,
