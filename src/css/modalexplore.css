@@ -52,7 +52,9 @@
   opacity: 1;
   visibility: visible;
 }
-
+.modalexplore .modal {
+  overflow: hidden;
+}
 /* Стили для кнопки закрытия */
 
 .modalexplore-btn {

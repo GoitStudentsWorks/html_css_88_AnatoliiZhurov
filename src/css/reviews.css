@@ -1,6 +1,5 @@
 .reviews {
   background-color: #fafafa;
-  
 }
 
 .reviews-container {
@@ -17,14 +16,14 @@
 
 .reviews-title {
   font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;  
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--color-black);
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--color-black);
 
-    margin-bottom: 74px;
+  margin-bottom: 74px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,8 +54,8 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  
-  background: #FFFFFF;
+
+  background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
@@ -100,11 +99,11 @@
   margin: 0 18px;
 
   font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: rgba(17, 17, 17, 0.7);
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
 }
 
 @media only screen and (min-width: 768px) {
@@ -119,7 +118,8 @@
   }
 }
 
-.swiper-pagination {}
+.swiper-pagination {
+}
 
 .reviews-swiper-pagination {
   position: static;
@@ -136,21 +136,21 @@
   display: flex;
   padding: 12px 28px;
   margin: 0 auto;
-  
+
   background-color: var(--color-wite);
   width: 165px;
   height: 41px;
-  border: 1px solid #FD9222;
-  border-radius: 100px
+  border: 1px solid #fd9222;
+  border-radius: 100px;
 }
 
 @media only screen and (min-width: 1200px) {
   .reviews-btn:hover,
-    .reviews-btn:focus {
-      color: var(--color-wite);
-      background: var(--color-orange);
-      transition: var(--anim-fast);
-    }
+  .reviews-btn:focus {
+    color: var(--color-wite);
+    background: var(--color-orange);
+    transition: var(--anim-fast);
+  }
 }
 
 /* Slider Pagination */
@@ -160,7 +160,7 @@
 }
 .swiper-pagination-bullet-active {
   width: 28px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--color-orange);
   transition: var(--anim-fast);
 }
