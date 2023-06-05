@@ -147,6 +147,7 @@
 }
 
 .made {
+  padding: 12px 28px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -231,6 +232,7 @@
     height: 45px;
   }
   .made {
+    padding: 14px 40px;
     max-width: 183px;
     height: 45px;
   }
