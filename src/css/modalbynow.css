@@ -1,5 +1,7 @@
 /* Дивись приклад налаштування у файлі Modal.css */
-
+html {
+  scroll-behavior: smooth;
+}
 .modalbynow {
   /* background-color: coral; */
   /* width: 311px;
