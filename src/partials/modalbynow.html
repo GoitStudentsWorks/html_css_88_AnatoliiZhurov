@@ -109,27 +109,28 @@
       </ul>
       <div class="modal-field-form">
         <form class="modal-form" name="contacts_form">
-          <label class="form-label-name form-label"
-            >Personal information
-            <div class="form-input-name">
-              <input
-                class="form-input"
-                type="text"
-                name="user_name"
-                placeholder="Name"
-                pattern="[A-Za-z]{1,}"
-                required
-              />
-              <input
-                class="form-input"
-                type="text"
-                name="user_surname"
-                placeholder="Surname"
-                pattern="[A-Za-z]{1,}"
-                required
-              />
-            </div>
-          </label>
+          <label class="form-label-name form-label" for="name"
+            >Personal information</label
+          >
+          <div class="form-input-name">
+            <input
+              class="form-input"
+              type="text"
+              name="user_name"
+              id="name"
+              placeholder="Name"
+              pattern="[A-Za-z]{1,}"
+              required
+            />
+            <input
+              class="form-input"
+              type="text"
+              name="user_surname"
+              placeholder="Surname"
+              pattern="[A-Za-z]{1,}"
+              required
+            />
+          </div>
           <label class="form-label" for="email">Email</label>
           <div class="form-field-email">
             <input
@@ -175,7 +176,7 @@
               <use href="./img/icons.svg#icon-mastercard"></use>
             </svg>
           </div>
-          <label for="comment" class="form-label">Comment</label
+          <label class="form-label" for="comment">Comment</label
           ><textarea
             class="form-comment"
             name="comment"
