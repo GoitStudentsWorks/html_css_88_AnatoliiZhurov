@@ -125,13 +125,6 @@
 
 
 /* Tablet */
-
-@media screen and (min-width: 768px) {
-  .reviews .swiper {
-      height: 488px;
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
   .reviews-title {
@@ -155,6 +148,7 @@
 /* Desctop */
 
 @media only screen and (min-width: 1200px) {
+
   .swiper-slide {
    width: calc((100% - 46px) / 3);
   }
