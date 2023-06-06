@@ -1,5 +1,5 @@
 .swiper {
-  width: 600px;
+  max-width: 600px;
   height: 300px;
 }
 .swiper-pagination-bullet {
