@@ -118,9 +118,6 @@
   }
 }
 
-.swiper-pagination {
-}
-
 .reviews-swiper-pagination {
   position: static;
   margin-bottom: 26px;
@@ -142,6 +139,8 @@
   height: 41px;
   border: 1px solid #fd9222;
   border-radius: 100px;
+
+  transition: var(--anim-fast);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -149,7 +148,6 @@
   .reviews-btn:focus {
     color: var(--color-wite);
     background: var(--color-orange);
-    transition: var(--anim-fast);
   }
 }
 
@@ -162,5 +160,6 @@
   width: 28px;
   border-radius: 0.5rem;
   background-color: var(--color-orange);
+
   transition: var(--anim-fast);
 }

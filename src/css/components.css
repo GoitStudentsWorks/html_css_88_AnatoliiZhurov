@@ -62,6 +62,9 @@
   border-radius: 15px;
   background-color: #fd9222;
   perspective: 1000px;
+
+  transition: transform var(--anim-fast),
+  border var(--anim-fast), background-color var(--anim-fast);
 }
 .components-list-item:not(:last-child) {
   margin-bottom: 20px;
@@ -155,6 +158,9 @@
   background: #ffffff;
   border-radius: 15px;
   transform: rotateY(180deg);
+}
+.components-overlay:focus{
+  transition: transform var(--anim-fast);
 }
 .overlay-taitle {
   font-weight: 600;
