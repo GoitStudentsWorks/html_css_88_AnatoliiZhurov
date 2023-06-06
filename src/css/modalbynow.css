@@ -1,13 +1,3 @@
-/* Дивись приклад налаштування у файлі Modal.css */
-html {
-  scroll-behavior: smooth;
-}
-.modalbynow {
-  /* background-color: coral; */
-  /* width: 311px;
-  padding: 32px 24px; */
-}
-
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
@@ -39,18 +29,14 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* transform: translate(-50%, 0); */
   z-index: 30;
   /* Должен быть выше чем у подложки*/
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  /* text-align: center; */
-  /* padding: 30px; */
   border-radius: 15px;
   background-color: #fff;
   transition: 0.3s all;
-  /* overflow: scroll; */
 }
 .modalbynow .modal {
   max-height: 95%;
@@ -60,12 +46,16 @@ html {
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 0;
 }
 
 @media only screen and (max-width: 1199px) {
   .modal.active,
   .overlay.active {
-    overflow: scroll;
+    overflow: auto;
   }
 }
 
@@ -96,7 +86,6 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* fill: #444; */
 }
 @media only screen and (min-width: 768px) {
   .modal-icon {
@@ -197,13 +186,6 @@ html {
   background-color: var(--color-orange);
   color: var(--color-txt-wite);
 }
-.modal-field-form {
-  /* display: flex;
-  gap: 18px; */
-}
-
-.modal-form {
-}
 
 .form-label {
   display: block;
@@ -243,8 +225,9 @@ html {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  /* margin-bottom: 18px; */
+  outline: none;
 }
+
 @media only screen and (min-width: 768px) {
   .form-input {
     height: 66px;
@@ -252,6 +235,16 @@ html {
     font-size: 18px;
     line-height: 1.2;
   }
+}
+.form-input:focus {
+  border-color: var(--color-orange);
+}
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: #4caf50;
+}
+
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
 }
 .form-field-tel {
   position: relative;
@@ -282,12 +275,6 @@ html {
     left: 24px;
     padding-right: 32px;
   }
-}
-.form-icon-tel {
-  /* position: absolute;
-  top: 50%;
-  left: 18px;
-  transform: translateY(-50%); */
 }
 @media only screen and (min-width: 768px) {
   .form-icon-tel {
@@ -344,6 +331,7 @@ html {
   font-size: 14px;
   line-height: 1.2px;
   margin-bottom: 18px;
+  outline: none;
 }
 @media only screen and (min-width: 768px) {
   .form-comment {
@@ -351,6 +339,9 @@ html {
     font-size: 18px;
     line-height: 1.2;
   }
+}
+.form-comment:focus {
+  border-color: var(--color-orange);
 }
 .form-btn {
   display: flex;

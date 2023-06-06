@@ -1,5 +1,3 @@
-.modalreview {
-}
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
@@ -36,8 +34,6 @@
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  /* text-align: center;
-  padding: 30px; */
   border-radius: 15px;
   background-color: #fff;
   transition: 0.3s all;
@@ -88,7 +84,6 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  /* text-align: center; */
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -137,6 +132,7 @@
   line-height: 1.2;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
+  outline: none;
 }
 @media only screen and (min-width: 768px) {
   .modalreview-input {
@@ -144,6 +140,17 @@
     padding: 22px 24px;
     font-size: 18px;
   }
+}
+.modalreview-input:focus {
+  border-color: var(--color-orange);
+}
+
+.modalreview-input:not(:placeholder-shown):required:valid {
+  border-color: #4caf50;
+}
+
+.modalreview-input:not(:placeholder-shown):required:invalid {
+  border-color: #f44336;
 }
 .modalreview-input-tel {
   padding-left: 106px;
@@ -178,10 +185,6 @@
   height: 32px;
 }
 .modalreview-number {
-  /* position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translateY(-50%); */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -204,6 +207,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2px;
+  outline: none;
 }
 @media only screen and (min-width: 768px) {
   .modalreview-comment {
@@ -211,9 +215,13 @@
     font-size: 18px;
   }
 }
+.modalreview-comment:focus {
+  border-color: var(--color-orange);
+}
 .modalreview-form-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 12px 28px;
   width: 93px;
   height: 41px;
