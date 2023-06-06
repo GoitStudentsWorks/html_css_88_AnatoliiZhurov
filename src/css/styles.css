@@ -42,7 +42,9 @@
   --anim-fast: 300ms ease-in;
   --anim-slow: 800ms ease;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--primary-font, sans-serif);
   font-style: normal;
