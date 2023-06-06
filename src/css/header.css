@@ -185,6 +185,12 @@
 
 .modal-close-icon {
   fill: var(--color-txt-wite);
+
+  transition: fill var(--anim-fast);
+}
+
+.modal-close-icon:hover, .modal-close-icon:focus{
+  fill: var(--color-orange);
 }
 
 @media only screen and (min-width: 768px) {
@@ -198,9 +204,6 @@
   margin-bottom: auto;
 }
 
-.mobile-menu .active {
-  color: var(--color-orange);
-}
 
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 24px;
@@ -213,6 +216,12 @@
   line-height: 16px;
   color: var(--color-txt-wite);
   letter-spacing: -0.02em;
+
+  transition: color var(--anim-fast);
+}
+
+.mobile-link:hover, .mobile-link:focus, .mobile-link:active{
+  color: var(--color-orange);
 }
 
 /* Mobile social links */
