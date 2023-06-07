@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/bytebenders/",
+    "build": "vite build --base=/html_css_88_AnatoliiZhurov/",
     "preview": "vite preview"
   },
   "devDependencies": {
